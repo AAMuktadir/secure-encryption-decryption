@@ -20,7 +20,7 @@ export default function Page() {
 
   const getUserInfo = async () => {
     try {
-      const response = await fetch("/api/extractData", {
+      const response = await fetch("/api/extractdata", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -79,10 +79,10 @@ export default function Page() {
             />
           )}
         </div>
-        <div className="flex flex-wrap gap-8">
+        <div className="">
           {userData &&
             (userData.posts && userData.posts.length > 0 ? (
-              <div className="">
+              <div className="flex flex-wrap gap-8">
                 {userData.posts.map((post, index) => (
                   <div
                     key={index}

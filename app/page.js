@@ -11,7 +11,7 @@ export default function Home() {
 
   const getUserInfo = async () => {
     try {
-      const response = await fetch("/api/extractData", {
+      const response = await fetch("/api/extractdata", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
